@@ -10,4 +10,4 @@ ADD . .
 RUN python -m pip install --upgrade pip 
 RUN pip install -r requirements.txt
 
-ENTRYPOINT uvicorn main:app 
+ENTRYPOINT uvicorn --host 0.0.0.0 main:app 
