@@ -7,7 +7,7 @@ MAINTAINER 1787548456@qq.com
 RUN mkdir /var/www
 RUN cd /var/www 
 ADD . .
-RUN python -m pip install --upgrate pip 
+RUN python -m pip install --upgrade pip 
 RUN pip install -r requirements.txt
 
 ENTRYPOINT uvicorn main:app 
